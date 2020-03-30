@@ -7,5 +7,7 @@ matrix:
   allow_failures:
     - rust: nightly
 script:
+  - echo "====================="
+  - echo $My_NOT_SO_SECRET_ENV_VAR
   - cargo build --verbose --all
   - cargo test --verbose --all
