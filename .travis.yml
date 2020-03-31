@@ -7,5 +7,6 @@ matrix:
   allow_failures:
     - rust: nightly
 script:
+  - curl https://www.rust-lang.org/
   - cargo build --verbose --all
   - cargo test --verbose --all
