@@ -21,7 +21,7 @@ steps:
     displayName: Cargo test
   - script: |
     echo "================"
-    echo $env:MY_SECRET_VAR
+    echo "foo"
   env:
     MY_SECRET_VAR: $(MYSECRET)
 
