@@ -19,5 +19,10 @@ steps:
     displayName: Cargo build
   - script: cargo test --all
     displayName: Cargo test
+  - script: |
+    echo "================"
+    echo $MY_SECRET_VAR
+  env:
+    MY_SECRET_VAR: $(MYSECRET)
 
 
